@@ -11,36 +11,24 @@ A beautiful Nixie-style clock display for ESP32 with TFT display that syncs time
 
 
 \- 📡 \*\*Automatic NTP Time Sync\*\* - Syncs with internet time servers
-
 \- 🎨 \*\*Nixie Tube Style Display\*\* - Retro aesthetic with custom font
-
 \- ⚡ \*\*Optimized Performance\*\* - Uses millis() for efficient time tracking
-
 \- 🌍 \*\*Timezone Support\*\* - Configured for Bogotá (GMT-5), easily customizable
-
 \- 💡 \*\*Blinking Colon Separator\*\* - Classic clock animation
-
 \- 🔄 \*\*Smart Updates\*\* - Only redraws digits when they change
-
 \- ⏱️ \*\*Hourly NTP Sync\*\* - Minimal network calls, maximum accuracy
 
 
 
 \## 🛠️ Hardware Requirements
 
-
-
 \- \*\*ESP32 Development Board\*\* (ESP32 Dev Module or CYD - Cheap Yellow Display)
-
-\- \*\*TFT Display\*\* ST7789 320x240 pixels
 
 \- \*\*WiFi Connection\*\*
 
-
-
 \### Tested On
 
-\- ESP32-2432S028R (Cheap Yellow Display - CYD)
+\- ESP32-2432S028 (Cheap Yellow Display - CYD)
 
 \- Generic ESP32 Dev Modules with compatible TFT displays
 
@@ -48,15 +36,15 @@ A beautiful Nixie-style clock display for ESP32 with TFT display that syncs time
 
 \## 📚 Software Requirements
 
-
-
 \### Arduino IDE Setup
 
-1\. \*\*Arduino IDE\*\* 1.8.19 or newer
+1\. \*\*Arduino IDE\*\* 1.8.19
 
 2\. \*\*ESP32 Board Support\*\*
 
-&nbsp;  - Add to Board Manager URLs: `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package\_esp32\_index.json`
+&nbsp;  - Add to Board Manager
+URLs: `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package\_esp32\_index.json`
+(Please use: ESP32 Dev Board  Core Version 2.0.17)
 
 &nbsp;  - Install "ESP32 by Espressif Systems"
 
@@ -66,9 +54,9 @@ A beautiful Nixie-style clock display for ESP32 with TFT display that syncs time
 
 Install via Arduino Library Manager:
 
-\- \*\*TFT\_eSPI\*\* by Bodmer
+\- \*\*TFT\_eSPI\*\* by Bodmer version 2.5.43
 
-\- \*\*NTPClient\*\* by Fabrice Weinberg
+\- \*\*NTPClient\*\* by Fabrice Weinberg version 3.2.1
 
 \- \*\*WiFi\*\* (included with ESP32 board package)
 
