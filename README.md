@@ -6,14 +6,6 @@ A beautiful Nixie-style clock display for ESP32 with TFT display that syncs time
 
 
 
-!\[Nixie Clock](https://img.shields.io/badge/Platform-ESP32-blue)
-
-!\[Display](https://img.shields.io/badge/Display-TFT%20320x240-green)
-
-!\[Library](https://img.shields.io/badge/Library-TFT\_\_eSPI-orange)
-
-
-
 \## ✨ Features
 
 
