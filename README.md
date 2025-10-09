@@ -11,7 +11,7 @@ A beautiful retro-style Nixie tube clock display for ESP32 with TFT display, fea
 - 🌍 **Timezone Support** - Pre-configured for Bogotá (GMT-5), easily customizable for any timezone
 - 🔄 **Smart Display Updates** - Only redraws digits when values change to reduce flicker
 - ⏱️ **Hourly NTP Sync** - Maintains accuracy with minimal network calls
-
+- 🔄 **Easy configuration via WiFi** - Press reset twice to start AP configuration for WIFI and TimeZone
 ---
 
 ## 🛠️ Hardware Requirements
@@ -100,10 +100,13 @@ First-time setup uses WiFiConfig portal:
 
 Once configured and running:
 
-1. **Initial Sync:** The clock will sync with NTP servers on boot
-2. **Automatic Updates:** Time is updated every second using `millis()` for precision
-3. **Hourly Sync:** NTP resynchronization occurs every hour to maintain accuracy
-4. **WiFi Recovery:** If WiFi disconnects, the device will attempt to reconnect automatically
+1. **Initial Sync:** The clock will sync with NTP servers on boot if Wifi is already setup, for first boot device will enter into
+   configuration mode , please use a phone and connect AP "NixieClock-AP" and open a browser at http://192.168.4.1
+   access WiFi setup
+3. **Automatic Updates:** Time is updated every second using `millis()` for precision
+4. **Hourly Sync:** NTP resynchronization occurs every hour to maintain accuracy
+5. **Date** Press the screen to see current date , and press it back to see clock again
+
 
 ---
 
