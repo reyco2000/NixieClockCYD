@@ -137,3 +137,4 @@ For questions or suggestions, please open an issue on GitHub.
 - **Bodmer** for the excellent TFT_eSPI library
 - **Fabrice Weinberg** for the NTPClient library
 - The ESP32 community for continuous support and resources
+- **Claude Code** for debugging
