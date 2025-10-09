@@ -11,9 +11,6 @@
 #include "TimeManager.h"
 #include <WiFi.h>
 
-// Configure DoubleResetDetector to use EEPROM
-#define ESP_DRD_USE_EEPROM true
-
 // Component managers
 DisplayManager display;
 WiFiConfig* wifiConfig;

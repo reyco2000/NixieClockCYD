@@ -9,8 +9,8 @@ WiFiConfig::WiFiConfig(TFT_eSPI* display) {
   timezoneOffsetSeconds = -5 * 3600;
   shouldSaveConfig = false;
 
-  // Initialize Double Reset Detector
-  drd = new DoubleResetDetector(10, 0x01);  // 10 second timeout, address 0x01
+  // Initialize Double Reset Detector (timeout and address now defined in header)
+  drd = new DoubleResetDetector(DRD_TIMEOUT, DRD_ADDRESS);
 }
 
 WiFiConfig::~WiFiConfig() {

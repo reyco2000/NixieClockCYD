@@ -1,6 +1,11 @@
 #ifndef WIFICONFIG_H
 #define WIFICONFIG_H
 
+// Configure DoubleResetDetector BEFORE including the library
+#define ESP_DRD_USE_EEPROM true
+#define DRD_TIMEOUT 10
+#define DRD_ADDRESS 0
+
 #include <WiFi.h>
 #include <WiFiManager.h>
 #include <ESP_DoubleResetDetector.h>
