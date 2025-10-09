@@ -55,11 +55,10 @@ URLs: `https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/packag
 Install via Arduino Library Manager:
 
 \- \*\*TFT\_eSPI\*\* by Bodmer version 2.5.43
-
 \- \*\*NTPClient\*\* by Fabrice Weinberg version 3.2.1
-
 \- \*\*WiFi\*\* (included with ESP32 board package)
-
+\- \*\*WiFiConfig\*\* (by Tabahi Tech version 2.2.26)
+\- \*\*DoubleResetDetector\*\* (by Stephen Denne version 1.0.3)
 
 
 \## 📦 Installation
