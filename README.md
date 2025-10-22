@@ -1,6 +1,6 @@
 # 🕰️ Nixie Clock for ESP32 CYD
 
-A beautiful retro-style Nixie tube clock display for ESP32 with TFT display, featuring automatic time synchronization via NTP (Network Time Protocol).
+A beautiful retro-style Nixie tube clock display for ESP32 with TFT display, featuring automatic time synchronization via NTP , created for the CDY.
 
 ---
 
@@ -18,8 +18,7 @@ A beautiful retro-style Nixie tube clock display for ESP32 with TFT display, fea
 
 ### Required Components
 
-- ESP32 Development Board (ESP32 Dev Module or CYD variant)
-- TFT Display (integrated in CYD or compatible external display)
+- Any CYD variant ESP32-2432S028
 - WiFi connection for NTP synchronization
 
 ### Tested Devices
@@ -75,7 +74,7 @@ cd nixie-clock-esp32
    - **macOS:** `~/Documents/Arduino/libraries/TFT_eSPI`
    - **Linux:** `~/Arduino/libraries/TFT_eSPI`
 
-2. Edit `User_Setup.h` or `User_Setup_Select.h` according to your display configuration
+2. Edit `User_Setup.h` or `User_Setup_Select.h` according to your display configuration (You can use https://github.com/witnessmenow/ESP32-Cheap-Yellow-Display/blob/main/DisplayConfig/User_Setup.h ) Already tested for CYD
 
 ### Step 3: Configure WiFi
 
@@ -86,12 +85,6 @@ First-time setup uses WiFiConfig portal:
 4. Configure your WiFi credentials in the web portal
 5. The device will automatically reconnect on subsequent boots
 
-### Step 4: Upload the Code
-
-1. Open `nixie-clock-esp32.ino` in Arduino IDE
-2. Select your board: Tools → Board → ESP32 Dev Module (or your specific board)
-3. Select the correct COM port: Tools → Port
-4. Click Upload
 
 ---
 
@@ -140,4 +133,4 @@ For questions or suggestions, please open an issue on GitHub.
 - **Bodmer** for the excellent TFT_eSPI library
 - **Fabrice Weinberg** for the NTPClient library
 - The ESP32 community for continuous support and resources
-- **Claude Code** for debugging
+- Antropic **Claude Code** for debugging
